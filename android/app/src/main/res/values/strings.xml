@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">OnePuttPro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="degree_symbol_string">\u00B0</string>
+    <string name="s">S</string>
+    <string name="putt_no">Putt No.:</string>
+    <string name="session_no">Session No.:</string>
+    <string name="name">Name:</string>
+    <string name="total_puts">Total Putts:</string>
+    <string name="session_score">Session Score:</string>
+    <string name="date_time">Date/Time:</string>
+    <string name="navigation_drawer_open">open\n</string>
+    <string name="navigation_drawer_close">close\n</string>
+    <string name="icon_tooltip">This is the icon tooltip.</string>
+    <string name="icon_description">Icon Description</string>
+
+
+</resources>

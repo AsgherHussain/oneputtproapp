@@ -1,0 +1,54 @@
+<!-- <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OnePuttPro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/loginBtnColor</item>
+        <item name="colorSecondaryVariant">@color/loginBtnColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <!--        <item name="statusBarBackground">@drawable/new_oneputt_logo_bg</item>-->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="CircularImageViewStyle" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.LargeComponent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/black</item>
+
+        <!--        <item name="android:windowBackground">@drawable/one_putt_screen_black_png</item>-->
+        <!--        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">-->
+        <!--            @drawable/one_putt_screen_black_png-->
+        <!--        </item>-->
+
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+             animated drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_inset</item>
+
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Theme.OnePuttPro</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.MaterialComponents.Light"></style>
+
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false </item>
+        <item name="android:progressDrawable">@drawable/circulat_progressbar</item>
+    </style>
+</resources> -->

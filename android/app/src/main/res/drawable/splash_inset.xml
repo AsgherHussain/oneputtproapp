@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/oneputtpro_logo_icon"
+    android:insetLeft="62dp"
+    android:insetRight="62dp"
+    android:insetTop="62dp"
+    android:insetBottom="62dp">
+
+</inset>

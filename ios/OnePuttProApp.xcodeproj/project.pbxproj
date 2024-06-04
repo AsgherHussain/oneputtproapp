@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* OnePuttProAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OnePuttProAppTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-OnePuttProApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-OnePuttProApp.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		14B5DB7C2B27351900CE59D8 /* YourGattCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B5DB7B2B27351900CE59D8 /* YourGattCallback.swift */; };
+		7699B88040F8A987B510C191 /* libPods-OnePuttProApp-OnePuttProAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-OnePuttProApp-OnePuttProAppTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CD03AA362B1313AC006276FA /* ExpandableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03AA352B1313AC006276FA /* ExpandableListView.swift */; };
+		CD69B91A2B0D31950028BC63 /* CSVReaderMainMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69B9192B0D31950028BC63 /* CSVReaderMainMethod.swift */; };
+		CD69B91C2B0D33630028BC63 /* FusionVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69B91B2B0D33630028BC63 /* FusionVector.swift */; };
+		CD69B9222B0D4CDC0028BC63 /* StartPracticeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD69B9212B0D4CDC0028BC63 /* StartPracticeBridge.m */; };
+		CDB9918F2B13EF2A005FDA23 /* BridgeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB9918D2B13EF2A005FDA23 /* BridgeEvent.m */; };
+		CDC4DDEC2B11DF0200227A7A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDE82B11DF0100227A7A /* HeaderView.swift */; };
+		CDC4DDED2B11DF0200227A7A /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDE92B11DF0200227A7A /* ExpandableView.swift */; };
+		CDC4DDEE2B11DF0200227A7A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDEA2B11DF0200227A7A /* Utilities.swift */; };
+		CDC4DDEF2B11DF0200227A7A /* ExpandableViewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDEB2B11DF0200227A7A /* ExpandableViewGroup.swift */; };
+		CDC4DDF22B11DF7900227A7A /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDF12B11DF7900227A7A /* PracticeView.swift */; };
+		CDC4DDF72B12094A00227A7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		CDC4DDF92B12323E00227A7A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDF82B12323E00227A7A /* CustomSlider.swift */; };
+		CDC4DDFB2B124D1200227A7A /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4DDFA2B124D1200227A7A /* CircleProgressBar.swift */; };
+		CDC752372B12A7DA00F61583 /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC752362B12A7DA00F61583 /* ColorConstant.swift */; };
+		CDCC7C2F2B0E839F007C67D6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCC7C2E2B0E839F007C67D6 /* Storyboard.storyboard */; };
+		CDCC7C312B0E8535007C67D6 /* FragmentStartPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC7C302B0E8535007C67D6 /* FragmentStartPractice.swift */; };
+		CDCC7C352B0EA0E8007C67D6 /* LineDGChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC7C342B0EA0E8007C67D6 /* LineDGChartView.swift */; };
+		CDD62F032B13540700B1356E /* OneputtModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F012B13540700B1356E /* OneputtModel.xcdatamodeld */; };
+		CDD62F0D2B135B5100B1356E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F0C2B135B5100B1356E /* CoreDataManager.swift */; };
+		CDD62F132B135DCE00B1356E /* PuttEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F0F2B135DCE00B1356E /* PuttEntity+CoreDataProperties.swift */; };
+		CDD62F142B135DCE00B1356E /* SessionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F102B135DCE00B1356E /* SessionEntity+CoreDataClass.swift */; };
+		CDD62F152B135DCE00B1356E /* PuttEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F112B135DCE00B1356E /* PuttEntity+CoreDataClass.swift */; };
+		CDD62F162B135DCE00B1356E /* SessionEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F122B135DCE00B1356E /* SessionEntity+CoreDataProperties.swift */; };
+		CDD62F182B1380C100B1356E /* PuttsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F172B1380C100B1356E /* PuttsListViewModel.swift */; };
+		CDD62F1A2B1380F000B1356E /* SessionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F192B1380F000B1356E /* SessionListViewModel.swift */; };
+		CDD62F202B138C9500B1356E /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F1F2B138C9500B1356E /* StatisticView.swift */; };
+		CDD62F222B138CA700B1356E /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62F212B138CA700B1356E /* SettingView.swift */; };
+		CDE95D832B167AD100275784 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE95D822B167AD100275784 /* LineView.swift */; };
+		CDE95D852B16804700275784 /* tflite_model_8.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CDE95D842B16804700275784 /* tflite_model_8.tflite */; };
+		CDE95D872B1685E800275784 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE95D862B1685E800275784 /* CommonFunction.swift */; };
+		CDE95D892B169C3100275784 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE95D882B169C3100275784 /* SoundPlayer.swift */; };
+		CDE95D8D2B16A20000275784 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDE95D8A2B16A20000275784 /* start.mp3 */; };
+		CDE95D8E2B16A20000275784 /* stop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDE95D8B2B16A20000275784 /* stop.mp3 */; };
+		CDE95D8F2B16A20000275784 /* invalidput.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDE95D8C2B16A20000275784 /* invalidput.mp3 */; };
+		CDF019102B1495910018D40E /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = CDF0190F2B1495910018D40E /* Numerics */; };
+		CDF019122B14AF110018D40E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF019112B14AF110018D40E /* Constants.swift */; };
+		CDF019142B14E8FB0018D40E /* PredictClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF019132B14E8FB0018D40E /* PredictClass.swift */; };
+		CDF019162B14F3E50018D40E /* LoadActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF019152B14F3E50018D40E /* LoadActivity.swift */; };
+		CDF411B92B106CF700A956FD /* BleConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF411B82B106CF700A956FD /* BleConnection.swift */; };
+		CDF411BC2B112A1F00A956FD /* MockConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF411BB2B112A1F00A956FD /* MockConstant.swift */; };
+		CDFA3D0B2B2BE20600F7EE03 /* LineStatisticChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA3D0A2B2BE20600F7EE03 /* LineStatisticChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = OnePuttProApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* OnePuttProAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePuttProAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* OnePuttProAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnePuttProAppTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* OnePuttProApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePuttProApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OnePuttProApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OnePuttProApp/main.m; sourceTree = "<group>"; };
+		14B5DB7B2B27351900CE59D8 /* YourGattCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGattCallback.swift; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-OnePuttProApp-OnePuttProAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePuttProApp-OnePuttProAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-OnePuttProApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePuttProApp.debug.xcconfig"; path = "Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-OnePuttProApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePuttProApp.release.xcconfig"; path = "Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-OnePuttProApp-OnePuttProAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePuttProApp-OnePuttProAppTests.debug.xcconfig"; path = "Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-OnePuttProApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePuttProApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-OnePuttProApp-OnePuttProAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePuttProApp-OnePuttProAppTests.release.xcconfig"; path = "Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD03AA352B1313AC006276FA /* ExpandableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListView.swift; sourceTree = "<group>"; };
+		CD69B9132B0CECDA0028BC63 /* OnePuttProApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnePuttProApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD69B9192B0D31950028BC63 /* CSVReaderMainMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReaderMainMethod.swift; sourceTree = "<group>"; };
+		CD69B91B2B0D33630028BC63 /* FusionVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FusionVector.swift; sourceTree = "<group>"; };
+		CD69B9202B0D4CDC0028BC63 /* StartPracticeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartPracticeBridge.h; sourceTree = "<group>"; };
+		CD69B9212B0D4CDC0028BC63 /* StartPracticeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartPracticeBridge.m; sourceTree = "<group>"; };
+		CDB9918D2B13EF2A005FDA23 /* BridgeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeEvent.m; sourceTree = "<group>"; };
+		CDB9918E2B13EF2A005FDA23 /* BridgeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeEvent.h; sourceTree = "<group>"; };
+		CDC4DDE82B11DF0100227A7A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CDC4DDE92B11DF0200227A7A /* ExpandableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
+		CDC4DDEA2B11DF0200227A7A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CDC4DDEB2B11DF0200227A7A /* ExpandableViewGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableViewGroup.swift; sourceTree = "<group>"; };
+		CDC4DDF12B11DF7900227A7A /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		CDC4DDF82B12323E00227A7A /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		CDC4DDFA2B124D1200227A7A /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
+		CDC752362B12A7DA00F61583 /* ColorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		CDCC7C2E2B0E839F007C67D6 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		CDCC7C302B0E8535007C67D6 /* FragmentStartPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentStartPractice.swift; sourceTree = "<group>"; };
+		CDCC7C342B0EA0E8007C67D6 /* LineDGChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDGChartView.swift; sourceTree = "<group>"; };
+		CDD62F022B13540700B1356E /* OneputtModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneputtModel.xcdatamodel; sourceTree = "<group>"; };
+		CDD62F0C2B135B5100B1356E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CDD62F0F2B135DCE00B1356E /* PuttEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PuttEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDD62F102B135DCE00B1356E /* SessionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CDD62F112B135DCE00B1356E /* PuttEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PuttEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CDD62F122B135DCE00B1356E /* SessionEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDD62F172B1380C100B1356E /* PuttsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuttsListViewModel.swift; sourceTree = "<group>"; };
+		CDD62F192B1380F000B1356E /* SessionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListViewModel.swift; sourceTree = "<group>"; };
+		CDD62F1F2B138C9500B1356E /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		CDD62F212B138CA700B1356E /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		CDE95D822B167AD100275784 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		CDE95D842B16804700275784 /* tflite_model_8.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tflite_model_8.tflite; sourceTree = "<group>"; };
+		CDE95D862B1685E800275784 /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
+		CDE95D882B169C3100275784 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		CDE95D8A2B16A20000275784 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
+		CDE95D8B2B16A20000275784 /* stop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stop.mp3; sourceTree = "<group>"; };
+		CDE95D8C2B16A20000275784 /* invalidput.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = invalidput.mp3; sourceTree = "<group>"; };
+		CDF019112B14AF110018D40E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CDF019132B14E8FB0018D40E /* PredictClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictClass.swift; sourceTree = "<group>"; };
+		CDF019152B14F3E50018D40E /* LoadActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadActivity.swift; sourceTree = "<group>"; };
+		CDF411B82B106CF700A956FD /* BleConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleConnection.swift; sourceTree = "<group>"; };
+		CDF411BB2B112A1F00A956FD /* MockConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstant.swift; sourceTree = "<group>"; };
+		CDFA3D0A2B2BE20600F7EE03 /* LineStatisticChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatisticChartView.swift; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-OnePuttProApp-OnePuttProAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF019102B1495910018D40E /* Numerics in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-OnePuttProApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* OnePuttProAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* OnePuttProAppTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = OnePuttProAppTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* OnePuttProApp */ = {
+			isa = PBXGroup;
+			children = (
+				CDD62F0E2B135DA100B1356E /* Coredata */,
+				CDC4DDF02B11DF0A00227A7A /* Expandable */,
+				CDC4DDF42B12042600227A7A /* AppDelegate */,
+				CDC4DDF52B12045E00227A7A /* Resources */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				CD69B9132B0CECDA0028BC63 /* OnePuttProApp-Bridging-Header.h */,
+				CDC4DDF32B12041000227A7A /* Calculation */,
+				CDC4DDF62B12047800227A7A /* ReactNativeBridge */,
+				CDC880412B0F6B4600702818 /* Fragment */,
+				CDF411BA2B106D1800A956FD /* BleConnection */,
+				CDF411BB2B112A1F00A956FD /* MockConstant.swift */,
+				CDC752362B12A7DA00F61583 /* ColorConstant.swift */,
+				CDF019112B14AF110018D40E /* Constants.swift */,
+				CDE95D862B1685E800275784 /* CommonFunction.swift */,
+				CDE95D882B169C3100275784 /* SoundPlayer.swift */,
+			);
+			name = OnePuttProApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-OnePuttProApp.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-OnePuttProApp-OnePuttProAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* OnePuttProApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* OnePuttProAppTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				D6B91EE8316D4E6783B94907 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* OnePuttProApp.app */,
+				00E356EE1AD99517003FC87E /* OnePuttProAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-OnePuttProApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-OnePuttProApp.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-OnePuttProApp-OnePuttProAppTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-OnePuttProApp-OnePuttProAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CDC4DDF02B11DF0A00227A7A /* Expandable */ = {
+			isa = PBXGroup;
+			children = (
+				CDC4DDE92B11DF0200227A7A /* ExpandableView.swift */,
+				CDC4DDEB2B11DF0200227A7A /* ExpandableViewGroup.swift */,
+				CDC4DDE82B11DF0100227A7A /* HeaderView.swift */,
+				CDC4DDEA2B11DF0200227A7A /* Utilities.swift */,
+			);
+			path = Expandable;
+			sourceTree = "<group>";
+		};
+		CDC4DDF32B12041000227A7A /* Calculation */ = {
+			isa = PBXGroup;
+			children = (
+				CD69B9192B0D31950028BC63 /* CSVReaderMainMethod.swift */,
+				CD69B91B2B0D33630028BC63 /* FusionVector.swift */,
+			);
+			path = Calculation;
+			sourceTree = "<group>";
+		};
+		CDC4DDF42B12042600227A7A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CDC4DDF52B12045E00227A7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDE95D8C2B16A20000275784 /* invalidput.mp3 */,
+				CDE95D8A2B16A20000275784 /* start.mp3 */,
+				CDE95D8B2B16A20000275784 /* stop.mp3 */,
+				CDE95D842B16804700275784 /* tflite_model_8.tflite */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				CDCC7C2E2B0E839F007C67D6 /* Storyboard.storyboard */,
+				CDD62F012B13540700B1356E /* OneputtModel.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDC4DDF62B12047800227A7A /* ReactNativeBridge */ = {
+			isa = PBXGroup;
+			children = (
+				CDB9918E2B13EF2A005FDA23 /* BridgeEvent.h */,
+				CDB9918D2B13EF2A005FDA23 /* BridgeEvent.m */,
+				CD69B9202B0D4CDC0028BC63 /* StartPracticeBridge.h */,
+				CD69B9212B0D4CDC0028BC63 /* StartPracticeBridge.m */,
+			);
+			path = ReactNativeBridge;
+			sourceTree = "<group>";
+		};
+		CDC880412B0F6B4600702818 /* Fragment */ = {
+			isa = PBXGroup;
+			children = (
+				CDCC7C302B0E8535007C67D6 /* FragmentStartPractice.swift */,
+				CDC4DDF12B11DF7900227A7A /* PracticeView.swift */,
+				CDC4DDF82B12323E00227A7A /* CustomSlider.swift */,
+				CDC4DDFA2B124D1200227A7A /* CircleProgressBar.swift */,
+				CDCC7C342B0EA0E8007C67D6 /* LineDGChartView.swift */,
+				CD03AA352B1313AC006276FA /* ExpandableListView.swift */,
+				CDD62F1F2B138C9500B1356E /* StatisticView.swift */,
+				CDD62F212B138CA700B1356E /* SettingView.swift */,
+				CDF019132B14E8FB0018D40E /* PredictClass.swift */,
+				CDE95D822B167AD100275784 /* LineView.swift */,
+				CDFA3D0A2B2BE20600F7EE03 /* LineStatisticChartView.swift */,
+				CDF019152B14F3E50018D40E /* LoadActivity.swift */,
+			);
+			path = Fragment;
+			sourceTree = "<group>";
+		};
+		CDD62F0E2B135DA100B1356E /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				CDD62F122B135DCE00B1356E /* SessionEntity+CoreDataProperties.swift */,
+				CDD62F112B135DCE00B1356E /* PuttEntity+CoreDataClass.swift */,
+				CDD62F102B135DCE00B1356E /* SessionEntity+CoreDataClass.swift */,
+				CDD62F0F2B135DCE00B1356E /* PuttEntity+CoreDataProperties.swift */,
+				CDD62F0C2B135B5100B1356E /* CoreDataManager.swift */,
+				CDD62F172B1380C100B1356E /* PuttsListViewModel.swift */,
+				CDD62F192B1380F000B1356E /* SessionListViewModel.swift */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		CDF411BA2B106D1800A956FD /* BleConnection */ = {
+			isa = PBXGroup;
+			children = (
+				CDF411B82B106CF700A956FD /* BleConnection.swift */,
+				14B5DB7B2B27351900CE59D8 /* YourGattCallback.swift */,
+			);
+			path = BleConnection;
+			sourceTree = "<group>";
+		};
+		D6B91EE8316D4E6783B94907 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* OnePuttProAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OnePuttProAppTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = OnePuttProAppTests;
+			productName = OnePuttProAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* OnePuttProAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* OnePuttProApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OnePuttProApp" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnePuttProApp;
+			packageProductDependencies = (
+				CDF0190F2B1495910018D40E /* Numerics */,
+			);
+			productName = OnePuttProApp;
+			productReference = 13B07F961A680F5B00A75B9A /* OnePuttProApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "OnePuttProApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				CD6209F22B0F97A800979A5B /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* OnePuttProApp */,
+				00E356ED1AD99517003FC87E /* OnePuttProAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC4DDF72B12094A00227A7A /* Images.xcassets in Resources */,
+				CDE95D8F2B16A20000275784 /* invalidput.mp3 in Resources */,
+				CDCC7C2F2B0E839F007C67D6 /* Storyboard.storyboard in Resources */,
+				CDE95D8E2B16A20000275784 /* stop.mp3 in Resources */,
+				CDE95D8D2B16A20000275784 /* start.mp3 in Resources */,
+				CDE95D852B16804700275784 /* tflite_model_8.tflite in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePuttProApp-OnePuttProAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePuttProApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp/Pods-OnePuttProApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnePuttProApp-OnePuttProAppTests/Pods-OnePuttProApp-OnePuttProAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* OnePuttProAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD69B9222B0D4CDC0028BC63 /* StartPracticeBridge.m in Sources */,
+				CDD62F0D2B135B5100B1356E /* CoreDataManager.swift in Sources */,
+				CDE95D832B167AD100275784 /* LineView.swift in Sources */,
+				CDC4DDF92B12323E00227A7A /* CustomSlider.swift in Sources */,
+				CD03AA362B1313AC006276FA /* ExpandableListView.swift in Sources */,
+				CDF411B92B106CF700A956FD /* BleConnection.swift in Sources */,
+				CDF019122B14AF110018D40E /* Constants.swift in Sources */,
+				CDCC7C312B0E8535007C67D6 /* FragmentStartPractice.swift in Sources */,
+				CDD62F032B13540700B1356E /* OneputtModel.xcdatamodeld in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				CDCC7C352B0EA0E8007C67D6 /* LineDGChartView.swift in Sources */,
+				CDC4DDEC2B11DF0200227A7A /* HeaderView.swift in Sources */,
+				CDC4DDEE2B11DF0200227A7A /* Utilities.swift in Sources */,
+				CDD62F132B135DCE00B1356E /* PuttEntity+CoreDataProperties.swift in Sources */,
+				CD69B91C2B0D33630028BC63 /* FusionVector.swift in Sources */,
+				CDE95D892B169C3100275784 /* SoundPlayer.swift in Sources */,
+				CDD62F142B135DCE00B1356E /* SessionEntity+CoreDataClass.swift in Sources */,
+				CDF019142B14E8FB0018D40E /* PredictClass.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				CDD62F1A2B1380F000B1356E /* SessionListViewModel.swift in Sources */,
+				CDD62F202B138C9500B1356E /* StatisticView.swift in Sources */,
+				CDE95D872B1685E800275784 /* CommonFunction.swift in Sources */,
+				CDD62F222B138CA700B1356E /* SettingView.swift in Sources */,
+				CDFA3D0B2B2BE20600F7EE03 /* LineStatisticChartView.swift in Sources */,
+				CDC4DDEF2B11DF0200227A7A /* ExpandableViewGroup.swift in Sources */,
+				CDD62F152B135DCE00B1356E /* PuttEntity+CoreDataClass.swift in Sources */,
+				CDC4DDF22B11DF7900227A7A /* PracticeView.swift in Sources */,
+				CD69B91A2B0D31950028BC63 /* CSVReaderMainMethod.swift in Sources */,
+				CDC4DDED2B11DF0200227A7A /* ExpandableView.swift in Sources */,
+				CDC4DDFB2B124D1200227A7A /* CircleProgressBar.swift in Sources */,
+				CDF019162B14F3E50018D40E /* LoadActivity.swift in Sources */,
+				CDD62F162B135DCE00B1356E /* SessionEntity+CoreDataProperties.swift in Sources */,
+				CDD62F182B1380C100B1356E /* PuttsListViewModel.swift in Sources */,
+				CDC752372B12A7DA00F61583 /* ColorConstant.swift in Sources */,
+				14B5DB7C2B27351900CE59D8 /* YourGattCallback.swift in Sources */,
+				CDF411BC2B112A1F00A956FD /* MockConstant.swift in Sources */,
+				CDB9918F2B13EF2A005FDA23 /* BridgeEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* OnePuttProApp */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-OnePuttProApp-OnePuttProAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OnePuttProAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnePuttProApp.app/OnePuttProApp";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-OnePuttProApp-OnePuttProAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = OnePuttProAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnePuttProApp.app/OnePuttProApp";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-OnePuttProApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = YUV2V5559K;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = OnePuttProApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.--Oneputtpro";
+				PRODUCT_NAME = OnePuttProApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "OnePuttProApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-OnePuttProApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = YUV2V5559K;
+				INFOPLIST_FILE = OnePuttProApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.--Oneputtpro";
+				PRODUCT_NAME = OnePuttProApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "OnePuttProApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OnePuttProAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OnePuttProApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "OnePuttProApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD6209F22B0F97A800979A5B /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDF0190F2B1495910018D40E /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD6209F22B0F97A800979A5B /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CDD62F012B13540700B1356E /* OneputtModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDD62F022B13540700B1356E /* OneputtModel.xcdatamodel */,
+			);
+			currentVersion = CDD62F022B13540700B1356E /* OneputtModel.xcdatamodel */;
+			path = OneputtModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

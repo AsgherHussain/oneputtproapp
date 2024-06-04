@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".FragmentPuttDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/putt_toolbar_layout"
+            layout="@layout/toolbar_conn" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainerActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+
+                        android:text="Open Setting"
+                        app:backgroundTint="@color/loginBtnColor" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnStatistic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Open Statistics"
+                        app:backgroundTint="@color/loginBtnColor" />
+                </LinearLayout>
+
+
+                <!--  header layout-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+                        <!--progressBar  layout-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:id="@+id/putt_screencolor"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@color/black" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/circle_drawable_for_progress_outside"
+                                        android:gravity="center">
+
+                                        <ProgressBar
+                                            android:id="@+id/putt_progress_bar_single_putt"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            android:indeterminateOnly="false"
+                                            android:progress="0"
+                                            android:progressDrawable="@drawable/circulat_progressbar"
+                                            android:rotation="-90"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            tools:progress="0" />
+
+                                    </LinearLayout>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/putt_resultViewPutterPercentage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="0%"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/putt_resultViewPutterPuttNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center"
+                                    android:text="Putt Number "
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/putt_ftText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="( 0 ft)"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <!--graph layout-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2sp"
+                                android:layout_marginTop="21dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="6dp"
+                                        android:text="Top View"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/graphview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:src="@drawable/baseline_info_2" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp">
+
+
+                                    <View
+                                        android:layout_width="65dp"
+                                        android:layout_height="1.4dp"
+                                        android:background="@color/black" />
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1.5dp"
+                                        android:background="#ccc" />
+
+                                </LinearLayout>
+
+                                <com.github.mikephil.charting.charts.LineChart
+                                    android:id="@+id/putt_lineChart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:visibility="visible"
+                                    tools:ignore="MissingClass" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/putt_btnPausePractice"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    
+                                    android:text="Pause Practice"
+                                    android:textSize="13sp"
+                                    app:backgroundTint="@color/loginBtnColor"
+                                   />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/putt_btnStopPractice"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:text="Stop Session"
+                                    android:textSize="13sp"
+                                    app:backgroundTint="@color/loginBtnColor" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--accordian layout-->
+                <LinearLayout
+                    android:id="@+id/putt_accordion_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <!--  putting tempo layout  -->
+                    <LinearLayout
+                        android:id="@+id/putt_puttingTempoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/putt_accordion_cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--   for headerLayout-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/light_bg_accordion_header"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/putt_resultViewPuttingTitle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:text="Putting Tempo"
+                                        android:textColor="@color/white" />
+
+                                    <ImageView
+                                        android:id="@+id/puttingTempoInfoIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginRight="10dp"
+                                        android:src="@drawable/baseline_info_24" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15sp"
+                                        android:background="@color/red"
+                                        android:gravity="center"
+                                        android:padding="5dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewPuttingValueTxt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="12sp"
+                                            android:paddingRight="12sp"
+                                            android:text="1:2"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/putt_puttingTempoArrow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="8dp"
+                                        android:rotation="0"
+                                        android:src="@drawable/ic_arrow_up" />
+
+
+                                </LinearLayout>
+
+                                <!--  for graphLayout-->
+                                <LinearLayout
+                                    android:id="@+id/putt_resultViewPuttingExpandableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="-3dp"
+                                        android:layout_marginRight="1dp"
+                                        android:padding="0dp"
+                                        android:visibility="visible">
+
+
+                                        <ImageView
+                                            android:id="@+id/putt_resultViewDetailsImgGolfStick"
+                                            android:layout_width="350dp"
+                                            android:layout_height="180dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginTop="12dp"
+
+                                            android:layout_marginBottom="20dp"
+                                            android:src="@drawable/stick" />
+
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_PuttingGreenTxtValue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/putt_imageArrowLayout"
+                                            android:layout_alignRight="@id/putt_imageArrowLayout"
+                                            android:layout_marginLeft="0dp"
+                                            android:layout_marginTop="-50dp"
+                                            android:layout_marginRight="50dp"
+                                            android:letterSpacing="0.05"
+                                            android:rotation="-16"
+                                            android:text="1.2 sec"
+                                            android:textColor="@color/black"
+                                            android:textSize="9sp" />
+
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_PuttingRedTxtValue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/putt_imageArrowLayout"
+                                            android:layout_alignRight="@id/putt_imageArrowLayout"
+                                            android:layout_marginLeft="0dp"
+                                            android:layout_marginTop="-5dp"
+                                            android:layout_marginRight="150dp"
+                                            android:letterSpacing="0.05"
+                                            android:rotation="20"
+                                            android:text="1.2 sec"
+                                            android:textColor="@color/black"
+                                            android:textSize="9sp" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/putt_imageArrowLayout"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+
+                                            android:gravity="center">
+
+
+                                            <ImageView
+                                                android:id="@+id/putt_greenArrow"
+                                                android:layout_width="195dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_marginLeft="28dp"
+                                                android:layout_marginTop="15dp"
+                                                android:layout_marginRight="12dp"
+                                                android:paddingLeft="33dp"
+                                                android:paddingTop="15dp"
+                                                android:paddingRight="30dp"
+                                                android:src="@drawable/green_arrow" />
+
+
+                                            <ImageView
+                                                android:id="@+id/putt_redArrow"
+                                                android:layout_width="165dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/putt_greenArrow"
+                                                android:layout_marginLeft="20dp"
+                                                android:layout_marginTop="30dp"
+                                                android:layout_marginRight="12dp"
+                                                android:paddingLeft="20dp"
+                                                android:paddingRight="72dp"
+                                                android:src="@drawable/red_arrow"
+                                                android:visibility="visible" />
+
+
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <!--  Loft Angle layout -->
+                    <LinearLayout
+                        android:id="@+id/putt_loftAngleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--   for headerLayout-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/light_bg_accordion_header"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:text="Loft Angle"
+                                        android:textColor="@color/white" />
+
+                                    <ImageView
+                                        android:id="@+id/loftInfoIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="Information Icon"
+                                        android:src="@drawable/baseline_info_24" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15sp"
+                                        android:background="@color/red"
+                                        android:gravity="center"
+                                        android:padding="5dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_loftAngleValueTxt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="12sp"
+                                            android:paddingRight="12sp"
+                                            android:text="2:1"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/putt_loftAngleArrowImg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="8dp"
+                                        android:rotation="0"
+                                        android:src="@drawable/ic_arrow_up" />
+
+
+                                </LinearLayout>
+
+                                <!--  for graphLayout-->
+                                <LinearLayout
+                                    android:id="@+id/putt_resultViewDetailsLoftAngleExpandableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="180dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="1dp"
+                                        android:background="@drawable/ball1"
+                                        android:padding="0dp"
+                                        android:visibility="visible">
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentBottom="false"
+                                            android:layout_centerHorizontal="true"
+
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:id="@+id/putt_loftAngleStick"
+                                                android:layout_width="68dp"
+                                                android:layout_height="140dp"
+                                                android:layout_gravity="left"
+
+                                                android:src="@drawable/loftangle_putt_stick"
+                                                android:translationY="0dp"
+                                                android:visibility="visible" />
+
+                                            <ImageView
+                                                android:layout_width="80dp"
+                                                android:layout_height="80dp"
+                                                android:layout_marginTop="85dp"
+                                                android:src="@drawable/ic_ball" />
+                                        </LinearLayout>
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_loftAngleDegreeTxt"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="Open : +2\u00B0"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <!--  putter face Angle layout -->
+                    <LinearLayout
+                        android:id="@+id/putt_putterFaceAngleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--   for headerLayout-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/light_bg_accordion_header"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:text="Putter Face Angle"
+                                        android:textColor="@color/white" />
+
+                                    <ImageView
+                                        android:id="@+id/putterFaceinfoIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="Information Icon"
+                                        android:src="@drawable/baseline_info_24" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15sp"
+                                        android:background="@color/red"
+                                        android:gravity="center"
+                                        android:padding="5dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewPutterFaceAngleValue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="12sp"
+                                            android:paddingRight="12sp"
+                                            android:text="2:1"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/putt_resultViewPutterFaceAngleArrowImg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="8dp"
+                                        android:rotation="0"
+                                        android:src="@drawable/ic_arrow_up" />
+
+
+                                </LinearLayout>
+
+                                <!--  for graphLayout-->
+                                <LinearLayout
+                                    android:id="@+id/putt_resultViewDetailsPutterFaceAngleExpandableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="-3dp"
+                                        android:background="@drawable/ic_topview_bc"
+                                        android:padding="0dp"
+                                        android:visibility="visible">
+
+
+                                        <ImageView
+                                            android:id="@+id/putt_resultViewPutterFaceAngleImgGolfStick"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="180dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginTop="50dp"
+                                            android:layout_marginRight="40dp"
+                                            android:layout_marginBottom="0dp"
+                                            android:rotation="0"
+                                            android:src="@drawable/put_stick" />
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="111dp"
+                                            android:layout_marginBottom="0dp"
+                                            android:src="@drawable/ic_ball" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewPutterFaceAngleDegreeTxt"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="25dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="Open : +2\u00B0"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <!-- Putter position angle layout(impact position)-->
+                    <LinearLayout
+                        android:id="@+id/putt_putterFacePositionAngleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="5dp"
+                            app:contentPadding="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--   for headerLayout-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/light_bg_accordion_header"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:text="Putter Face Position"
+                                        android:textColor="@color/white" />
+
+                                    <ImageView
+                                        android:id="@+id/PutterFacePosiInfoIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="Information Icon"
+                                        android:src="@drawable/baseline_info_24" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15sp"
+                                        android:background="@color/red"
+                                        android:gravity="center"
+                                        android:padding="5dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewPutterFacePositionAngleValue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="12sp"
+                                            android:paddingRight="12sp"
+                                            android:text="2:1"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/putt_resultViewPutterFacePositionArrow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="8dp"
+                                        android:rotation="0"
+                                        android:src="@drawable/ic_arrow_up" />
+
+
+                                </LinearLayout>
+
+                                <!--  for graphLayout-->
+                                <LinearLayout
+                                    android:id="@+id/putt_resultViewDetailsPutterFaceAnglePositionExpandableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="180dp"
+
+                                        android:layout_marginTop="-3dp"
+
+                                        android:background="@drawable/ic_topview_bc"
+                                        android:padding="0dp"
+                                        android:visibility="visible">
+
+                                        <!--                                        <LinearLayout-->
+                                        <!--                                            android:layout_width="130dp"-->
+                                        <!--                                            android:layout_height="match_parent"-->
+                                        <!--                                            android:layout_alignParentRight="true"-->
+                                        <!--                                            android:gravity="bottom"-->
+                                        <!--                                            android:orientation="horizontal">-->
+
+                                        <!--                                            <ImageView-->
+                                        <!--                                                android:layout_width="60dp"-->
+                                        <!--                                                android:layout_height="60dp"-->
+                                        <!--                                                android:layout_gravity="center"-->
+                                        <!--                                                android:src="@drawable/ic_ball" />-->
+
+                                        <!--                                            <ImageView-->
+                                        <!--                                                android:id="@+id/putt_resultViewPutterPositionImgGolfStick"-->
+                                        <!--                                                android:layout_width="wrap_content"-->
+                                        <!--                                                android:layout_height="130dp"-->
+                                        <!--                                                android:rotation="30"-->
+                                        <!--                                                android:src="@drawable/put_stick"-->
+                                        <!--                                                android:translationY="15dp"-->
+                                        <!--                                                android:visibility="visible" />-->
+
+
+                                        <!--                                        </LinearLayout>-->
+                                        <ImageView
+                                            android:id="@+id/putt_resultViewPutterPositionImgGolfStick"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="180dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginTop="50dp"
+                                            android:layout_marginRight="40dp"
+                                            android:layout_marginBottom="0dp"
+                                            android:rotation="0"
+                                            android:src="@drawable/put_stick" />
+
+                                        <ImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="111dp"
+                                            android:layout_marginBottom="0dp"
+                                            android:src="@drawable/ic_ball" />
+
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewDetailsPutterFacePositionDegreeTxt"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:text="Face : Open  +2\u00B0"
+                                            android:textColor="@color/white"
+                                            android:textSize="17sp"
+                                            android:textStyle="bold" />
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <!-- Lie Angle   -->
+                    <LinearLayout
+                        android:id="@+id/putt_lieAngleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="3dp"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--   for headerLayout-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/light_bg_accordion_header"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:text="Lie Angle"
+                                        android:textColor="@color/white" />
+
+                                    <ImageView
+                                        android:id="@+id/lieAngleInfoIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="Information Icon"
+                                        android:src="@drawable/baseline_info_24" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15sp"
+                                        android:background="@color/red"
+                                        android:gravity="center"
+                                        android:padding="5dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewDetailsLieAngleValueTxt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="12sp"
+                                            android:paddingRight="12sp"
+                                            android:text="2:1"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/putt_resultViewDetailsLieAngleImgArrow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="8dp"
+                                        android:rotation="0"
+                                        android:src="@drawable/ic_arrow_up" />
+
+
+                                </LinearLayout>
+
+                                <!--  for graphLayout-->
+                                <LinearLayout
+                                    android:id="@+id/putt_resultViewDetailsLieExpandableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="180dp"
+                                        android:layout_gravity="center"
+
+                                        android:background="@drawable/grass"
+                                        android:padding="0dp"
+                                        android:visibility="visible">
+
+
+                                        <ImageView
+                                            android:id="@+id/putt_resultViewImageLieAngle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="125dp"
+
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="0dp"
+                                            android:rotationX="10"
+                                            android:src="@drawable/ic_lie_angle_new" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_lieAngleStart"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="140dp"
+                                            android:layout_marginRight="20dp"
+                                            android:text="Lie Angle Start : 2"
+                                            android:textColor="#605F5F"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewImageLieAngleImpact"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="140dp"
+                                            android:layout_marginRight="10dp"
+                                            android:text="Lie Angle Impact : 2"
+                                            android:textColor="#605F5F"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                    <!--  accel  at impact  -->
+                    <LinearLayout
+                        android:id="@+id/putt_accelerationImpactLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="3dp"
+                            app:cardElevation="5dp"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <!--   for headerLayout-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/light_bg_accordion_header"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_weight="1"
+                                        android:text="Acceleration Impact"
+                                        android:textColor="@color/white" />
+
+                                    <ImageView
+                                        android:id="@+id/accelrationImpactInfoIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="Information Icon"
+                                        android:src="@drawable/baseline_info_24" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15sp"
+                                        android:background="@color/red"
+                                        android:gravity="center"
+                                        android:padding="5dp">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewAccelerationValue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="12sp"
+                                            android:paddingRight="12sp"
+                                            android:text="2:1"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/putt_resultViewAccelerationImageArrow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="8dp"
+                                        android:rotation="0"
+                                        android:src="@drawable/ic_arrow_up" />
+
+
+                                </LinearLayout>
+
+                                <!--  for graphLayout-->
+                                <LinearLayout
+                                    android:id="@+id/putt_resultViewDetailsAccelerationImpactExpandableLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="-3dp"
+                                        android:layout_marginRight="1dp"
+                                        android:padding="0dp"
+                                        android:visibility="visible">
+
+
+                                        <ImageView
+                                            android:layout_width="350dp"
+                                            android:layout_height="180dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginTop="12dp"
+                                            android:layout_marginBottom="0dp"
+                                            android:src="@drawable/ic_accel_at_impact" />
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/putt_resultViewDetailsAcceleratioImpactDegreeTxt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="50dp"
+                                            android:text="20 sec "
+                                            android:textColor="#605F5F"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:visibility="visible" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>
